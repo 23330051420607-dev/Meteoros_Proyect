@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaleb Villanueva Anaya">
+    <meta name="date" content="25/10/2025">
+    <meta name="description" content="Ultima practica xfin">
+    <meta name="keywords" content="html, futbol, Meteoros, _meteorosfc_, orizaba, kennet">
+    <link rel="stylesheet" href="estilos.css"> 
+    <title>Sugerencias</title>
+ </head>
+ <body>
+    <header class="menu">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Meteoros FC">
+            </a>
+        </div>
+
+        <nav>
+            <a href="ProximosP.html">Proximos Partidos</a>
+            <a href="Plantilla.html">Plantilla</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="Sugerencias.html">Sugerencias</a>
+            <a href="Acerca.html">Acerca de mi</a>
+        </nav>
+    </header>
+
+    <main class="PagFormulario">
+        <h2>Envíanos tu Sugerencia</h2>
+        
+        <section>
+        <form class="formulario" action="https://formspree.io/f/xdkponoa" method="POST">
+            
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+           
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+           
+                <label for="categoria">Tema de la Sugerencia:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="equipo">Rendimiento del Equipo/Jugadores</option>
+                    <option value="web">Mejora de la Página Web</option>
+                    <option value="organizacion">Organización/Eventos</option>
+                    <option value="otro">Otro</option>
+                </select>
+            
+                <label for="mensaje">Tu Sugerencia (Sé específico):</label>
+                <textarea id="mensaje" class="textlarge"  name="mensaje" rows="6" placeholder="Escribe aquí tus ideas o comentarios..." required></textarea>
+           
+                <button type="submit">Enviar Respuesta</button> 
+            
+        </form>
+    </section>
+    <aside class="contactoPrin"> 
+         <a href="tel:+522723349793" class="Numero_call" target="_blank">
+            <img src="telapp.png" alt="logo telefono app" class="img_Call">
+         </a>
+
+         <a href="https://wa.me/522723349793" class="Numero_whatts" target="_blank">
+            <img src="whattsapp.png" alt="logo whattsapp" class="img_whatts">
+         </a>
+
+         <a href="https://instagram.com/_meteorosfc_" class="Contac_img" target="_blank">
+            <img src="igapp.png" alt="logo ig" class="img_ig">
+         </a>
+                    
+         </aside> 
+    </main>
+    <footer>
+        <p>&copy; 2025 - Creado por Lic.Villanueva</p>
+        
+    </footer>
+ </body>
+</html>

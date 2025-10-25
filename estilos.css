@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002d72;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    text-align: center;
+}
+
+.menu {
+    background-color: #002d72;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h2{
+    margin-top: 0;        /* quita espacio superior del h1 */
+    margin-bottom: 15px;  /* reduce el espacio inferior */
+    padding: 5px 15px;
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+.logo img {
+    height: 70px; 
+    vertical-align: middle;
+}
+
+.menu nav {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    justify-content: center; 
+    margin-right: 50px;
+}
+
+.menu nav a {
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-left: 1px solid white;
+    line-height: 1; 
+}
+
+.menu nav a:first-child {
+    border-left: none;
+}
+
+.menu nav a:hover {
+    color: #ffcc00; 
+}
+
+.PagPrincipal {
+    background-color: #002d72; 
+}
+
+.imgPrincipal {
+    position: relative; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.imgEquipo {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(60%);
+}
+
+.datePrincipal {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white;
+    width: 90%; 
+}
+
+.datePrincipal h2 {
+    font-family: serif; 
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.datePrincipal p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.contactoPrin {
+    position: absolute; 
+    bottom: 0;        
+    left: 0;
+    width: 100%;        
+    
+    background-color: #002d72; 
+    color: white;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+.contactoPrin a {
+    margin: 0 15px; 
+    display: flex; 
+    align-items: center;
+}
+
+.img_Call,
+.img_whatts,
+.img_ig {
+    width: 55px;         
+    height: 55px;        
+    border-radius: 50%;  
+    object-fit: cover;   
+    border: 3px solid white; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+.Pag_part {
+    background-color: #002d72; 
+    padding: 0 20px 30px 20px;
+    min-height: 100vh;
+}
+
+.Lista_D {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.Partido_D {
+    background-color: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    overflow: hidden; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #002d72; 
+}
+
+.Fecha_D {
+    background-color: #002d72;
+    color: white;
+    width: 150px;
+    min-height: 100px; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.dia {
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.mes_hora {
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+.Info_D {
+    flex-grow: 1; 
+    padding: 0 15px;
+}
+
+.Torneo {
+    background-color: #f0f0f0;
+    color: #002d72;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.equi {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px 0;
+    line-height: 1.2;
+}
+
+.ubi {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.Marcador_G {
+    width: 80px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #ff0000; 
+}
+
+.Marcador_N {
+    width: 80px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #002d72; 
+}
+
+.Partido_F {
+    background-color: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    overflow: hidden; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #999; 
+}
+
+.Partido_F .Fecha_F {
+    background-color: #ccc; 
+    width: 150px;
+    min-height: 100px; 
+    border-radius: 10px;
+}
+
+.Partido_F .Info_F {
+    flex-grow: 1; 
+    padding: 0 15px;
+    font-style: italic;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.Marcador_F {
+    width: 80px;
+    background-color: #f4f4f4; 
+    min-height: 100px; 
+}
+
+.PagPlantilla {
+    background-color: #002d72; 
+    padding: 0 20px 30px 20px;
+    min-height: 100vh;
+}
+
+.sec_Plantilla {
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.tarj_Jug {
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;     
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    text-align: center;
+}
+
+.img_jug { 
+    width: 120px; 
+    height: 120px; 
+    object-fit: cover; 
+    object-position: top; 
+    display: block;
+    margin-bottom: 0; 
+    border-radius: 10px; 
+    margin-right: 15px; 
+    border: 3px solid #002d72; 
+}
+
+.Pos {
+    position: absolute;
+    top: 5px;
+    right: 5px; 
+    z-index: 5;
+    display: flex;
+    flex-direction: row; 
+    gap: 5px;
+}
+
+.MED, .ATA, .DEF, .POR {
+    color: white;
+    font-size: 0.8em; 
+    font-weight: bold;
+    padding: 3px 5px; 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4); 
+}
+
+.MED { background-color: #008000; }
+.ATA { background-color: #ff0000; }
+.DEF { background-color: #002d72; }
+.POR { background-color: #ffcc00; }
+
+
+.Info_Jug {
+    flex-grow: 1; 
+    padding: 0; 
+    text-align: left; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.nombre {
+    font-size: 1.5em; 
+    font-weight: bold;
+    color: #002d72; 
+    margin: 0; 
+}
+
+.apodo {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #333;
+    margin: 0;
+}
+
+.detalle {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px; 
+}
+
+.formulario {
+    background-color: white;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    color: #333; 
+    text-align: left; 
+}
+
+.formulario label {
+    display: block; 
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #002d72; 
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+
+.boxPos,
+.radiodisp,
+.grupo.opciones {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.boxPos p,
+.radiodisp p,
+.grupo.opciones p {
+    font-weight: bold;
+    color: #002d72;
+    margin-bottom: 10px;
+}
+
+.boxPos label,
+.radiodisp label,
+.grupo.opciones label {
+    display: inline-block; 
+    margin-right: 20px;
+    font-weight: normal;
+    color: #333;
+    margin-top: 0;
+}
+
+.formulario button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #ffcc00; 
+    color: #002d72; 
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: #e6b800; 
+    transform: translateY(-2px); 
+}
+.contactoPrin {
+    position: static;
+    width: auto;
+    background-color: transparent;
+    padding: 10px 0 0 0;
+    margin-top: 20px;
+    border-top: 1px solid #002d72;
+}
+.contactoPrin .img_Call,
+.contactoPrin .img_whatts,
+.contactoPrin .img_ig {
+    border: 3px solid #002d72; 
+}
+
+textarea#mensaje.textlarge {
+    width: 100%; 
+    min-height: 150px;
+    resize: vertical; 
+    box-sizing: border-box;
+    margin-top: 5px;
+
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    background-color: #ffffff; 
+
+    font-family: inherit;
+    font-size: 1em;
+    color: #333; 
+    line-height: 1.5;
+
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea#mensaje.textlarge:focus {
+    border-color: #007bff; 
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+textarea#mensaje.textlarge::placeholder {
+    color: #999; 
+    opacity: 1; 
+    font-style: italic; 
+}
+
+.acerca {
+    background-color: #002d72; 
+    color: white; 
+    padding: 40px 20px 50px 20px;
+    min-height: calc(100vh - 100px); 
+    text-align: center; 
+}
+
+.acerca section {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 30px;
+    background-color: white; 
+    color: #333; 
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.acerca .foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top; 
+    border-radius: 50%;
+    border: 5px solid #002d72;
+    margin: 20px auto;
+    display: block;
+}
+
+.acerca h2 {
+    border-bottom: none; 
+    color: #002d72;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+.acerca h3 {
+    color: #002d72;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.acerca p {
+    text-align: justify; 
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.acerca .contactoPrin {
+    position: static; 
+    background-color: transparent;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+
+.acerca .contactoPrin .img_gitHub {
+    width: 55px; 
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #002d72; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+.acerca .contactoPrin .img_ig {
+    border: 3px solid #002d72;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaleb Villanueva Anaya">
+    <meta name="date" content="24/10/2025">
+    <meta name="description" content="Ultima practica xfin">
+    <meta name="keywords" content="html, futbol, Meteoros, _meteorosfc_, orizaba, kennet">
+    <link rel="stylesheet" href="estilos.css"> 
+    <title>Contacto</title>
+ </head>
+ <body>
+    <header class="menu">
+        <div class="logo">
+            <a href="index.html">
+                 <img src="logo.png" alt="Logo Meteoros FC">
+            </a>
+        </div>
+        <nav>
+            <a href="ProximosP.html">Próximos Partidos</a>
+            <a href="Plantilla.html">Plantilla</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="Sugerencias.html">Sugerencias</a>
+            <a href="Acerca.html">Acerca de mi</a>
+        </nav>
+    </header>
+
+    <main class="PagContacto">
+      <h2>Formulario de Contacto</h2>
+      <section>
+      <form action="https://formspree.io/f/xovpagrr" class="formulario" method="post">
+         
+         <label for="nombre">Nombre Completo:</label>
+         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
+         
+         <label for="edad">Edad:</label>
+         <input type="number" id="edad" name="edad" min="13" max="20" value="17">
+         
+         <label for="correo">Correo Electronico:</label>
+         <input type="email" id="correo" name="correo" placeholder="ejemp@gmail.com">
+
+         <label for="num">Numero de Contacto:</label>
+         <input type="text" id="num" name="num" placeholder="272 727 7272">
+
+         
+         <div class="boxPos">
+            <p>Posiciones en las que juegas:</p>
+            <label><input type="checkbox" name="posicion" value="POR">Portero</label>
+            <label><input type="checkbox" name="posicion" value="DEF">Defensa</label>
+            <label><input type="checkbox" name="posicion" value="MED">Mediocampista</label>
+            <label><input type="checkbox" name="posicion" value="ATA">Delantero</label>
+         </div>
+
+         <div class="radiodisp">
+            <p>Disponibilidad:</p>
+            <label><input type="radio" name="dispo" value="sab">Sabado</label>
+            <label><input type="radio" name="dispo" value="dom">Domingo</label>
+            <label><input type="radio" name="dispo" value="ambos">Ambos</label>
+         </div>
+
+         <label for="TallaUni">Talla uniforme:</label>
+
+         <select name="Talla" id="Talla">
+            <option value="">Selecciona una talla:</option>
+            <option value="chica">Chica</option>
+            <option value="mediana">Mediana</option>
+            <option value="grande">Grande</option>
+         </select>
+
+         <label for="vive">Municipio donde vive:</label>
+         <input type="text" id="vive" name="vive" placeholder="Orizaba">
+
+         <button type="submit">Enviar Respuesta</button>
+
+      </form>
+     </section>
+     
+        <aside class="contactoPrin"> 
+         <a href="tel:+522723349793" class="Numero_call" target="_blank">
+            <img src="telapp.png" alt="logo telefono app" class="img_Call">
+         </a>
+
+         <a href="https://wa.me/522723349793" class="Numero_whatts" target="_blank">
+            <img src="whattsapp.png" alt="logo whattsapp" class="img_whatts">
+         </a>
+
+         <a href="https://instagram.com/_meteorosfc_" class="Contac_img" target="_blank">
+            <img src="igapp.png" alt="logo ig" class="img_ig">
+         </a>
+                    
+         </aside> 
+    </main>
+    <footer>
+        <p>&copy; 2025 - Creado por Lic.Villanueva</p>
+    </footer>
+ </body>
+</html>
